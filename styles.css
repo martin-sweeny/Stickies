@@ -1,0 +1,72 @@
+html, body {
+    background : #efefef;
+}
+* {
+    margin : 0;
+    padding : 0;
+}
+
+.note-wrapper {
+    -webkit-perspective : 1000;
+}
+
+.note.tape::before {
+    content : "";
+    width : 40%;
+    background : rgba(227, 200, 114, 0.42);
+    height : 32px;
+    box-shadow : 0 1px 1px -1px rgba(0,0,0,0.5);
+    position: absolute;
+    top : -10px;
+    left : 50%;
+    margin-left : -20%;
+    border-radius : 6px/14px 0;
+    -webkit-transform: rotateZ(1deg);
+}
+
+.note.clean::before {
+    content : "";
+    background: #fe8;
+    /* background : red; */
+    height : 19px;
+    width : 100%;
+    position: absolute;
+    top : -19px;
+    left : 0;
+}
+
+.note {
+    background: #f2de7d;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZGU3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQxJSIgc3RvcC1jb2xvcj0iI2ZmZWM4NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNGUxN2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #f2de7d 0%, #ffec84 41%, #f4e17f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2de7d), color-stop(41%,#ffec84), color-stop(100%,#f4e17f));
+    background: -webkit-linear-gradient(top,  #f2de7d 0%,#ffec84 41%,#f4e17f 100%);
+    background: -o-linear-gradient(top,  #f2de7d 0%,#ffec84 41%,#f4e17f 100%);
+    background: -ms-linear-gradient(top,  #f2de7d 0%,#ffec84 41%,#f4e17f 100%);
+    background: linear-gradient(to bottom,  #f2de7d 0%,#ffec84 41%,#f4e17f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2de7d', endColorstr='#f4e17f',GradientType=0 );
+
+    padding : 2rem;
+    box-shadow : 0 5px 4px -4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    -webkit-transform: rotateX(8deg)
+}
+
+[data-note-id="01"] {
+    top : 15px;
+    left : 34px;
+    font : 300 36px Shadows Into Light Two;
+    /* -webkit-text-stroke : 0.5px; */
+    color : rgba(0, 0, 60, 0.7);
+    -webkit-transform : rotateZ(-1.7deg);
+
+}
+
+[data-note-id="02"] {
+    top : 21px;
+    left : 301px;
+    font : 100 20px Architects Daughter;
+    /* -webkit-text-stroke : 0.2px; */
+    color : rgba(0, 0, 30, 0.8);
+    -webkit-transform : rotateZ(2deg);
+}

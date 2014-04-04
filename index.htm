@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+
+        <script>
+            /* Google Web Fonts */
+            WebFontConfig = {
+                google: {
+                    families: ['Gochi+Hand::latin', 'Walter+Turncoat::latin', 'Architects+Daughter::latin', 'Covered+By+Your+Grace::latin', 'Shadows+Into+Light+Two::latin']
+                }
+            };
+            (function () {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="note-wrapper">
+    <section class="note tape" data-note-id="01">
+        <header>Note title</header>
+        <p>Lorem ipsum</p>
+        <footer>Author</footer>
+    </section>
+    <section class="note tape" data-note-id="02">
+        <header>Note title</header>
+        <p>Lorem ipsum</p>
+        <footer>Author</footer>
+    </section>
+</div>
+    </body>
+</html>
